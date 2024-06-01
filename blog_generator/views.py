@@ -83,7 +83,7 @@ def download_audio(link):
 
 def get_transcription(link):
     audio_file = download_audio(link)
-    aai.settings.api_key = "0831843d4a4a454c8384f6f3919c45b8"
+    # aai.settings.api_key = "jsdnjncsdjcnsdc"
 
     transcriber = aai.Transcriber()
     transcript = transcriber.transcribe(audio_file)
@@ -91,7 +91,7 @@ def get_transcription(link):
 
 def generate_blog_from_transcription(transcription,title):
     
-    client = OpenAI(api_key="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")
+    # client = OpenAI(api_key="1234sbdhbhsbdcsjdc")
     
 
     #can not use this as it say You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs
